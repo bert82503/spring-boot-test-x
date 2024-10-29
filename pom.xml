@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.7.11</version>
+    <version>2.7.18</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
@@ -17,7 +17,7 @@
   <name>spring-test-x</name>
 
   <properties>
-    <java.version>11</java.version>
+<!--    <java.version>1.8</java.version>-->
   </properties>
 
   <dependencies>
@@ -32,16 +32,17 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <!-- TestNG Upto v7.5: JDK 8. -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.8.0</version>
+      <version>7.5.1</version>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-testng</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.2</version>
       <optional>true</optional>
     </dependency>
 
