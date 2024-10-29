@@ -1,9 +1,8 @@
 package com.test.tutorial.web.param;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -16,7 +15,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class UserInfoParam extends UserIdParam {
-
     // 变量名与请求参数名不一样，在 @RequestBody 中用到
     // https://github.com/FasterXML/jackson-annotations#annotations-for-renaming-properties
     /**

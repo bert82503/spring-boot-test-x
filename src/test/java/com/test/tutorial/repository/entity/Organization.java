@@ -13,7 +13,7 @@ import java.io.Serializable;
  * 组织信息表
  *
  * @author lihuagang
- * @date 2023/5/24
+ * @since  2023/5/24
  */
 @Data
 @Accessors(chain = true)

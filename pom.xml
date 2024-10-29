@@ -5,19 +5,19 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.7.18</version>
+    <version>3.2.11</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
   <groupId>com.test</groupId>
-  <artifactId>spring-test-x</artifactId>
+  <artifactId>spring-boot-test-x</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>spring-test-x</name>
+  <name>spring-boot-test-x</name>
 
   <properties>
-<!--    <java.version>1.8</java.version>-->
+<!--    <java.version>17</java.version>-->
   </properties>
 
   <dependencies>
@@ -32,13 +32,20 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <!-- TestNG Upto v7.5: JDK 8. -->
+    <!-- TestNG v7.6.0 and above: JDK 11 or higher. -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.5.1</version>
+      <version>7.10.2</version>
       <optional>true</optional>
     </dependency>
+    <!-- TestNG Upto v7.5: JDK 8. -->
+<!--    <dependency>-->
+<!--      <groupId>org.testng</groupId>-->
+<!--      <artifactId>testng</artifactId>-->
+<!--      <version>7.5.1</version>-->
+<!--      <optional>true</optional>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-testng</artifactId>

@@ -6,6 +6,7 @@ import com.test.tutorial.repository.entity.Organization;
 import com.test.tutorial.repository.entity.User;
 import com.test.tutorial.service.UserService;
 import com.test.tutorial.service.impl.UserServiceImpl;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -16,8 +17,6 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-
-import javax.annotation.Resource;
 
 import java.util.stream.Stream;
 
@@ -43,12 +42,11 @@ import static org.junit.jupiter.params.provider.Arguments.*;
  * </pre>
  *
  * @author lihuagang
- * @date 2023/5/24
+ * @since  2023/5/24
  */
 @SpringJUnitConfig(UserServiceImpl.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class UserServiceTest {
-
     @Resource
     private UserService userService;
 

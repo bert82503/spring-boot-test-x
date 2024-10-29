@@ -5,6 +5,7 @@ import com.test.tutorial.service.UserService;
 import com.test.tutorial.web.controller.UserController;
 import com.test.tutorial.web.param.UserIdParam;
 import com.test.tutorial.web.result.UserNameResult;
+import jakarta.annotation.Resource;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -14,8 +15,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-
-import javax.annotation.Resource;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -30,7 +29,7 @@ import static org.mockito.Mockito.*;
  * </pre>
  *
  * @author lihuagang
- * @date 2023/5/24
+ * @since  2023/5/24
  */
 @SpringJUnitWebConfig(UserController.class)
 @AutoConfigureMockMvc
@@ -38,7 +37,6 @@ import static org.mockito.Mockito.*;
 //@ExtendWith(MockitoExtension.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class UserControllerTest {
-
     @Resource
     private UserController userController;
     @Resource

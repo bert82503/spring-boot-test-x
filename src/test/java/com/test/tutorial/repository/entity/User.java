@@ -12,7 +12,8 @@ import java.io.Serializable;
 /**
  * 用户信息表
  *
- * @date 2014-7-25
+ * @author Edward Lee
+ * @since  2014-7-25
  */
 @Data
 @Accessors(chain = true)

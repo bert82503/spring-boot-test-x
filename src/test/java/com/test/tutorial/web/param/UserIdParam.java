@@ -1,9 +1,8 @@
 package com.test.tutorial.web.param;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -24,7 +23,6 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class UserIdParam extends AbstractParam {
-
     /**
      * 用户身份
      */

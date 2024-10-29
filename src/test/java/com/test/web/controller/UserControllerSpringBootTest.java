@@ -4,6 +4,7 @@ import com.test.Application;
 import com.test.MockMvcRequestUtils;
 import com.test.tutorial.service.UserService;
 import com.test.tutorial.web.controller.UserController;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,8 +12,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
-
-import javax.annotation.Resource;
 
 import static org.mockito.Mockito.*;
 
@@ -31,7 +30,7 @@ import static org.mockito.Mockito.*;
  * </pre>
  *
  * @author lihuagang
- * @date 2023/5/24
+ * @since  2023/5/24
  */
 @Slf4j
 @SpringBootTest(classes = Application.class)
@@ -39,7 +38,6 @@ import static org.mockito.Mockito.*;
 //@EnableWebMvc
 //@ExtendWith(MockitoExtension.class)
 public class UserControllerSpringBootTest {
-
     @Resource
     private MockMvc mockMvc;
 

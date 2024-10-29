@@ -1,5 +1,6 @@
 package com.test.tutorial.web.controller;
 
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.util.StringUtils;
@@ -7,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.validation.Valid;
 
 import com.test.tutorial.service.UserService;
 import com.test.tutorial.web.param.UserIdParam;
@@ -21,13 +20,12 @@ import com.test.tutorial.web.result.UserNameResult;
  * User controller.
  *
  * @author Bert Lee
- * @version 2014-8-19
+ * @since  2014-8-19
  */
 @Slf4j
 @RestController("userController")
 @RequestMapping(value = "/user")
 public class UserController {
-
     private final UserService userService;
 
     public UserController(

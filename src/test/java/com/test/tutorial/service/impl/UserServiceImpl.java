@@ -15,16 +15,14 @@ import java.util.Optional;
  * User service implementation.
  *
  * @author Edward Lee
- * @date 2014-7-25
+ * @since  2014-7-25
  */
 @Slf4j
 @Service("userService")
 public class UserServiceImpl implements UserService {
 
-//    @Resource
-//    private UserMapper userMapper;
-//    @Resource
-//    private OrgMapper orgMapper;
+//    private final UserMapper userMapper;
+//    private final OrgMapper orgMapper;
 
     private final UserMapper userMapper;
     private final OrgMapper orgMapper;
