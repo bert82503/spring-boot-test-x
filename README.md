@@ -1,10 +1,9 @@
 
 
-spring-test-x
+spring-boot-test-x
 ======
 
-The extension of 
-[Spring Test Framework](https://docs.spring.io/spring-framework/reference/testing.html).
+The extension of [Spring Boot Testing](https://docs.spring.io/spring-boot/reference/testing/index.html), [Testing Spring Boot Applications](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html) and [Spring Test Framework](https://docs.spring.io/spring-framework/reference/testing.html).
 
 
 ## 核心组件
@@ -78,6 +77,8 @@ The extension of
 * [关于单元测试的总结及思考](http://ju.outofmemory.cn/entry/321814)
 * [写有价值的单元测试](https://yq.aliyun.com/articles/93804)
 * [如何正确认知测试金字塔](https://www.51ste.com/share/det-5870.html)
+* [Spring Boot Testing](https://docs.spring.io/spring-boot/reference/testing/index.html)
+* [Testing Spring Boot Applications](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
 * [14. Unit Testing of Spring Framework](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/unit-testing.html)
 * [16. Further Resources of Spring Framework](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/testing-resources.html)
 * [Test Overview - SpringSide4](https://github.com/springside/springside4/wiki/Test-Overview)
